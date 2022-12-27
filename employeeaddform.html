@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" th:href="@{/style/table.css}"/>
+<title>Employee Add Form</title>
+</head>
+<body>
+<form action="#" th:action="@{/api/saveemp}"
+th:object=${employee} method="POST"
+>
+<div th:class="addform">
+
+<h2>FirstName
+<input type="text" th:field="*{firstName}" placeholder="First Name" 
+
+></h2>
+<h2>LastName
+
+<input type="text" th:field="*{lastName}" placeholder="Last Name" 
+></h2>
+<h2>Email
+<input type="text" th:field="*{email}" placeholder="email" 
+
+></h2>
+<br>
+<center>
+<button type="Submit"><h3>Save</h3></button>
+
+
+<button type="Submit"  formaction="http://localhost:8086/api/getallemp"><h3>Back</h3></button></center>
+</form>
+</body>
+</html>
+
+
+

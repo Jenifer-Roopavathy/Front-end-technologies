@@ -1,0 +1,40 @@
+@charset "UTF-8";
+h1{
+	color:blue;
+}
+
+th {
+  height: 40px;
+}
+h2
+{
+	color:#400080;
+	
+}
+.addform
+{
+ 
+  width: 500px;
+  
+}
+.addform input
+ {
+  background-color:#ff80ff;
+ border:5px solid #fc05b6;
+ border-radius: 35px;
+  height:50px;
+  width: 100%;
+  
+  
+}
+button
+{
+  color:white;
+  background-color:#ff0000;	
+  box-align:"center";
+  border:3px solid #ff0000;
+  border-radius: 20px;
+  height:50px;
+  width: 70px;
+  
+}

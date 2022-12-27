@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" th:href="@{/style/table.css}"/>
+
+<title>Customer Add Form</title>
+</head>
+<body>
+
+
+
+<form action="#" th:action="@{/api/savecus}"
+th:object=${customer} method="POST"
+>
+<div th:class="addform">
+
+<input type="hidden" th:field="*{id}" placeholder="Id" 
+>
+
+<h2>Section
+<input type="text" th:field="*{section}"  placeholder="Section"
+
+></h2>
+
+<h2>FirstName
+<input type="text" th:field="*{firstName}"  placeholder="First Name"
+
+></h2>
+<h2>LastName
+<input type="text" th:field="*{lastName}" placeholder="Last Name" 
+
+></h2>
+
+<h2>Email
+<input type="text" th:field="*{email}" placeholder="email" 
+
+></h2>
+
+<h2>Age:
+<input type="text" th:field="*{age}" placeholder="age" 
+
+></h2>
+
+<h2>Ph.no:
+<input type="text" th:field="*{phno}" placeholder="phone number" 
+
+></h2>
+
+
+<br>
+<center>
+<button type="Submit"><h3>Save</h3></button>
+
+
+
+
+<button type="Submit"  formaction="http://localhost:8086/api/getallcus"><h3>Back</h3></button>
+</center>
+</form>
+</div>
+ 
+</body>
+</html>
+
+
+
