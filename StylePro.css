@@ -1,0 +1,28 @@
+
+button {
+    border:1px solid #fc05b6;
+    padding: 1px 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #fc05b6;
+    border-radius: 40px;
+    outline: none;
+  }
+button:hover{background-color:#ed52b2;}
+button:active{background-color:#c4097f;}  
+header
+{
+background-color:#fc05b6 ;
+}  
+nav
+{
+  color:black;
+background-color:#cdbcf5 ;
+} 
+h4
+{
+width: 200px;
+height:50px;
+border:1px solid #ebe6e6;
+}
